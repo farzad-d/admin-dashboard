@@ -105,19 +105,27 @@
       <div class="header">
         <search>
           <form action="/search">
-            <button type="submit">🔎</button>
-            <input type="search" name="q" placeholder="Search..." />
+            <button class="search-btn" type="submit" aria-label="Search button">
+              <img src="./assets/icons/search.svg" alt="search-button" />
+            </button>
+            <input class="search-bar" type="search" name="search" />
           </form>
         </search>
         <div class="user-menu">
-          <button class="notification">🔔</button>
-          <img class="profile-photo" src="https://picsum.photos/42" alt="" />
-          <p class="user-name">Morgan</p>
+          <button class="notification-btn">
+            <img src="./assets/icons/notification.svg" alt="" />
+          </button>
+          <img
+            class="profile-photo"
+            src="./assets/avatars/avatar-1.jpg"
+            alt=""
+          />
+          <p class="user-name">Morgan Oakley</p>
         </div>
         <div class="login-info">
           <img
             class="large-profile-photo"
-            src="https://picsum.photos/64"
+            src="./assets/avatars/avatar-1.jpg"
             alt=""
           />
           <p class="user-info">

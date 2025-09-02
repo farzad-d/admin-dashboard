@@ -15,17 +15,20 @@ body {
 }
 
 .header {
-  background-color: green;
-  padding: 15px 60px;
+  background-color: white;
+  padding: 5px 40px;
+  padding-bottom: 8px;
   grid-area: 1/2/2/3;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  z-index: 1;
 }
 
 .main-content {
-  background-color: orange;
+  background-color: #e2e8f0;
   grid-column: 2/3;
   display: flex;
   padding: 15px;
@@ -55,6 +58,7 @@ body {
   border-radius: 6px;
   padding: 30px 20px;
   overflow: hidden;
+  border-left: 8px solid #f0b429;
 }
 
 .cards {
@@ -73,19 +77,19 @@ body {
 }
 
 .panel-section {
-  background-color: cyan;
+  background-color: white;
   border-radius: 6px;
   padding: 25px;
 }
 
 .profile-photo {
   border-radius: 50%;
-  width: 3rem;
+  width: 2.8rem;
 }
 
 .large-profile-photo {
   border-radius: 50%;
-  width: 4.5rem;
+  width: 4.2rem;
 }
 
 [alt$="-icon"] {
@@ -119,4 +123,79 @@ li a {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  padding: 0.2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.search-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.search-bar {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 100px;
+  width: 35rem;
+  height: 2rem;
+}
+
+search > form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notification-btn {
+  background: none;
+  border: none;
+  padding: 0.2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.notification-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.user-menu > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.user-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.greeting {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btns > button {
+  background: none;
+  border: none;
+  background-color: #1992d4;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.btns > button:hover {
+  background-color: #1681bb;
 }
