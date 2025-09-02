@@ -31,7 +31,7 @@ body {
   background-color: #e2e8f0;
   grid-column: 2/3;
   display: flex;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .sidebar > ul {
@@ -71,7 +71,6 @@ body {
 .panel {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   width: 35vw;
   padding: 0 15px;
 }
@@ -198,4 +197,11 @@ search > form {
 
 .btns > button:hover {
   background-color: #1681bb;
+}
+
+.title {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
