@@ -67,12 +67,15 @@ body {
   flex-direction: column;
   width: 18vw;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
-.panel-section {
+.panel-container,
+.announcements {
   background-color: white;
   border-radius: 6px;
-  padding: 25px;
+  padding: 20px;
+  box-shadow: 3px 3px 3px lightgray;
 }
 
 .profile-photo {
@@ -249,4 +252,50 @@ search > form {
 
 .card-btn:active {
   fill: dodgerblue;
+}
+
+.announcement-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.announcement-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+  color: #5e5e5e;
+  line-height: 1.2;
+}
+
+.trending > img {
+  width: 2.8rem;
+  border-radius: 50%;
+}
+
+.trending {
+  display: flex;
+  gap: 10px;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-name {
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 15px;
+}
+
+.announcement:not(:first-child) {
+  padding-top: 15px;
 }
