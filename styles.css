@@ -299,3 +299,13 @@ search > form {
 .announcement:not(:first-child) {
   padding-top: 15px;
 }
+
+.trending a {
+  text-decoration: none;
+}
+
+.trending a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1f1fc2;
+}
