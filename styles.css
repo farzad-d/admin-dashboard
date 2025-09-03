@@ -30,8 +30,10 @@ body {
 .main-content {
   background-color: #e2e8f0;
   grid-column: 2/3;
-  display: flex;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
   padding: 0 15px;
+  gap: 0.5rem;
 }
 
 .sidebar > ul {
@@ -49,21 +51,13 @@ body {
 }
 
 .user-menu,
-.btns {
+.header-btns {
   justify-self: end;
-}
-
-.card {
-  background-color: gray;
-  border-radius: 6px;
-  padding: 30px 20px;
-  overflow: hidden;
-  border-left: 8px solid #f0b429;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 200px;
   gap: 15px;
 }
@@ -71,7 +65,7 @@ body {
 .panel {
   display: flex;
   flex-direction: column;
-  width: 35vw;
+  width: 18vw;
   padding: 0 15px;
 }
 
@@ -182,7 +176,7 @@ search > form {
   font-weight: bold;
 }
 
-.btns > button {
+.header-btns > button {
   background: none;
   border: none;
   background-color: #1992d4;
@@ -195,8 +189,12 @@ search > form {
   margin-left: 20px;
 }
 
-.btns > button:hover {
-  background-color: #1681bb;
+.header-btns > button:hover {
+  background-color: #1787c4;
+}
+
+.header-btns > button:active {
+  background-color: #147cb4;
 }
 
 .title {
@@ -204,4 +202,51 @@ search > form {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px 20px;
+  border-left: 8px solid #f0b429;
+  position: relative;
+  box-shadow: 3px 3px 3px lightgray;
+}
+
+.card-btns {
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 16px;
+  color: #5e5e5e;
+  line-height: 1.2;
+}
+
+.card-btn {
+  background: none;
+  border: none;
+  padding: 0.2rem;
+  width: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+.card-btn:hover {
+  fill: #1771cb;
+}
+
+.card-btn:active {
+  fill: dodgerblue;
 }
